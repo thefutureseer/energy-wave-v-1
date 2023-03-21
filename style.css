@@ -1,6 +1,11 @@
 /* maybe the vh on body or 
 html is a bad idea if switching 
 frrom desktop to mobile */
+:root {
+ --sky: #003371; 
+ --cloudy: rgb(0, 143, 200);
+}
+
 body {
   height: 50vh;
   background-color: rgb(168, 168, 168);
@@ -11,20 +16,22 @@ body {
   position: relative;
   height: 100%;
   font-size: 50px;
-  color: rgb(0, 185, 199);
+  color: rgb(0, 70, 199);
   left: 4%;
 }
 
 .wave {
-  border: 7px dotted;
   position: absolute;
+  border: 7px dotted;
+  box-shadow: 0 3px rgba(0, 136, 255, 0.089);
   transform: rotate(-44.5deg);
-  animation: wave 5s infinite alternate;
+  animation: wave 4s;
+  /* animation-iteration-count: 2; */
 }
 
 @keyframes wave {
   to {
-    transform: rotate(545deg);
+    transform: rotate(745deg);
   }  
 }
 
@@ -34,7 +41,7 @@ body {
   bottom: -4.75625em;
   left: 0.24375;
   border-color: transparent transparent
-  blue rgb(0, 221, 255);
+  var(--cloudy) var(--sky);
   border-radius: 9.5125em;
 }
 
@@ -44,7 +51,7 @@ body {
   bottom: -4.5em;
   left: 0.48;
   border-color: transparent transparent
-  blue rgb(0, 221, 255);
+  var(--cloudy) var(--sky);
   border-radius: 9em;
   animation-delay: 150ms;
 }
@@ -54,7 +61,7 @@ body {
   bottom: -4.25em;
   left: 0.75;
   border-color: transparent transparent
-  blue rgb(0, 221, 255);
+  var(--cloudy) var(--sky);
   border-radius:8.5em;
   animation-delay: 225ms;
 }
@@ -64,57 +71,67 @@ body {
   bottom: -4em;
   left: 0.97;
   border-color: transparent transparent
-  blue rgb(0, 221, 255);
+  var(--cloudy) var(--sky);
   border-radius: 8em;
   animation-delay: 300ms;
 }
 .wave:nth-child(5) {
   width: 7.5em;
   height: 7.5em;
-  bottom: -3.7em;
+  bottom: -3.75em;
   left: 1.2;
   border-color: transparent transparent
-  blue rgb(0, 221, 255);
+  var(--cloudy) var(--sky);
   border-radius: 7.5em;
   animation-delay: 375ms;
 }
 .wave:nth-child(6) {
   width: 7em;
   height: 7em;
-  bottom: -3em;
+  bottom: -3.5em;
   left: 1.5;
   border-color: transparent transparent
-  blue rgb(0, 221, 255);
+  var(--cloudy) var(--sky);
   border-radius: 7em;
   animation-delay: 425ms;
 }
-.wave:nth-child(5) {
-  width: 7.5em;
-  height: 7.5em;
-  bottom: -3.7;
-  left: 1.2;
+.wave:nth-child(7) {
+  width: 6.5em;
+  height: 6.5em;
+  bottom: -3.25em;
+  left: 1.7;
   border-color: transparent transparent
-  blue rgb(0, 221, 255);
-  border-radius: 7.5em;
-  animation-delay: 375ms;
+  var(--cloudy) var(--sky);
+  border-radius: 6.5em;
+  animation-delay: 500ms;
 }
-.wave:nth-child(5) {
-  width: 7.5em;
-  height: 7.5em;
-  bottom: -3.7;
-  left: 1.2;
+.wave:nth-child(8) {
+  width: 6em;
+  height: 6em;
+  bottom: -3em;
+  left: 1.9;
   border-color: transparent transparent
-  blue rgb(0, 221, 255);
-  border-radius: 7.5em;
-  animation-delay: 375ms;
+  var(--cloudy) var(--sky);
+  border-radius: 6em;
+  animation-delay: 525ms;
 }
-.wave:nth-child(5) {
-  width: 7.5em;
-  height: 7.5em;
-  bottom: -3.7;
-  left: 1.2;
+.wave:nth-child(9) {
+  width: 5.5em;
+  height: 5.5em;
+  bottom: -2.7em;
+  left: 2.2;
   border-color: transparent transparent
-  blue rgb(0, 221, 255);
-  border-radius: 7.5em;
-  animation-delay: 375ms;
+  var(--cloudy) var(--sky);
+  border-radius: 5.5em;
+  animation-delay: 555ms;
+}
+.wave:nth-child(10) {
+  width: 5em;
+  height: 5em;
+  bottom: -2.5em;
+  left: 2.5;
+  border-color: transparent transparent
+  var(--cloudy) var(--sky);
+  border-radius: 5em;
+  animation-delay: 575ms;
 }
