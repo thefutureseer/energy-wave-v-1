@@ -1,0 +1,40 @@
+/* maybe the vh on body or 
+html is a bad idea if switching 
+frrom desktop to mobile */
+body {
+  height: 50vh;
+  background-color: rgb(168, 168, 168);
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  font-size: 50px;
+  color: rgb(0, 185, 199);
+  left: 4%;
+}
+
+.wave {
+  border: 7px dotted;
+  position: absolute;
+  transform: rotate(-44.5deg);
+  animation: wave 5s infinite alternate;
+}
+
+@keyframes wave {
+  to {
+    transform: rotate(545deg);
+  }  
+}
+
+.wave:nth-child(1) {
+  width: 9.5125em;
+  height: 9.5125em;
+  bottom: -4.75625;
+  left: 0.24375;
+  border-color: transparent transparent
+  blue rgb(0, 221, 255);
+  border-radius: 9.5125em;
+}
+
